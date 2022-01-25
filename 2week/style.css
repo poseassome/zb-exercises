@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* [문제1] 아래 요구사항에 맞춰 기본 스타일 작성하기 */
+/*
+	.wrapper (가로 세로 500px, 보더 10px darkblue, 배경색 #fff)
+	.box (가로 세로 100px, 보더 5px black)
+	.box.red (배경색 red)
+	.box.yellow (배경색 yellow)
+	.box.green (배경색 green)
+*/
+.wrapper {
+  width: 500px;
+  height: 500px;
+  border: 10px solid darkblue;
+  background: #fff;
+}
+.wrapper .box {
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+}
+.wrapper .box.red {
+  background: red;
+}
+.wrapper .box.yellow {
+  background: yellow;
+}
+.wrapper .box.green {
+  background: green;
+}
+
+/* [문제2] display: flex와 justify-content 속성 사용하기 */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* [문제3] align-self 속성 사용하기 */
+.box.red {
+  align-self: flex-start;
+}
+
+.box.yellow {
+  align-self: center;
+}
+
+.box.green {
+  align-self: flex-end;
+}
+
+/* [문제4] .wrapper에 hover 했을 때 .box 모두 45deg 회전되도록 하기 */
+.wrapper:hover .box {
+  transform: rotate(45deg);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  height: 100vh;
+  background-color: #222;
+}
+body * {
+  box-sizing: border-box;
+}

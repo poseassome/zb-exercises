@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff" preload />
+  <title>캐릭터 커스터마이징</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="character-wrapper">
+      <div class="image-wrapper">
+        <img alt="캐릭터 이미지" class="image" />
+      </div>
+      <div class="infos">
+        <div class="hair">
+          <div><span>▶</span>머리스타일</div>
+          <input class="detail" type="range" min="0" max="2" value="0" />
+        </div>
+        <div class="body">
+          <div><span>▶</span>체형</div>
+          <input class="detail" type="range" min="0" max="2" value="0" />
+        </div>
+        <div class="job">
+          <div><span>▶</span>직업</div>
+          <select class="detail"></select>
+          <button class="action-button">Click</button>
+        </div>
+        <div class="ability">
+          <div><span>▶</span>능력</div>
+          <select class="detail"></select>
+          <button class="action-button">Click</button>
+        </div>
+      </div>
+      <p class="introduction"></p>
+    </div>
+  </main>
+  <script src="./src/index.js" type="module"></script>
+</body>
+
+</html>

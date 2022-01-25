@@ -1,0 +1,40 @@
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+header {
+  text-align: center;
+  background: #ddd;
+  padding: 8px;
+}
+main {
+  background: #f1f1f1;
+  img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2 {
+    padding: 8px 8px 0;
+  }
+  p {
+    padding: 8px;
+  }
+  span {
+    text-decoration: underline;
+    background: #77f902;
+  }
+}
+footer {
+  background: #000;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+}
